@@ -11,7 +11,6 @@ export default function CoreBanner() {
 
     const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
 
-
     return (
         <View>
             <View 

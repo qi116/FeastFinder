@@ -9,6 +9,8 @@ import {
   ScrollView,
   Button
 } from "react-native";
+
+// Components
 import PopularCards from "./PopularCards";
 import BannerCard from "./BannerCard";
 
@@ -26,13 +28,6 @@ export default function Home({navigation}: HomeProps) {
       <ScrollView>
         <BannerCard />
         <PopularCards />
-        <Button
-        title='Go to Account'
-        onPress={() => navigation.navigate(
-          "Account", 
-          {uid: 86}
-        )}
-        />
       </ScrollView>
     </SafeAreaView>
   )
@@ -56,14 +51,5 @@ const elStyles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-start',
     backgroundColor: '#ffffff'
-  }
-})
-
-const textStyles = StyleSheet.create({
-  darkMText: {
-    color: '#FFFFFF'
-  },
-  lightMText: {
-    color: '#000000'
   }
 })
